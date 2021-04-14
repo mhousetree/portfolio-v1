@@ -1,0 +1,46 @@
+@import "../../components/variable.scss";
+
+.skill_list {
+    display: flex;
+    flex-direction: row;
+    margin: .5rem 0;
+
+    li {
+        border-left: 1px solid $text-color;
+        padding: 0 .5em;
+
+        &:first-child {
+            border: none;
+        }
+    }
+}
+
+.img_wrapper {
+    margin: 1rem 1rem 1rem 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12vw, 1fr));
+    grid-template-rows: repeat(auto-fill, 9vw);
+    gap: .5rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: #fff;
+        filter: drop-shadow(0, 0, 2px, $text-color);
+
+        &:hover {
+            transform: scale(1.02);
+            filter: brightness(0.9);
+            transition: .3s;
+        }
+    }
+}
+
+@media screen and (max-width:1450px) {
+    .img_wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(16vw, 1fr));
+        grid-template-rows: repeat(auto-fill, 12vw);
+    
+    }
+}

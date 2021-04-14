@@ -1,0 +1,19 @@
+@import '../../components/variable.scss';
+
+.wrapper {
+    margin: auto
+}
+
+.eyecatch {
+    font-size: 4rem;
+    font-weight: 300;
+    font-kerning: none;
+
+    span {
+        font-weight: 400;
+        color: $main-color; 
+        background: linear-gradient(60deg, $main-color, $sub-color); 
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

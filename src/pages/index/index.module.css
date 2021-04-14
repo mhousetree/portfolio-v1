@@ -1,0 +1,23 @@
+:root {
+  --contentWidth: 60vw;
+}
+
+.wrapper {
+  margin: auto;
+}
+
+.eyecatch {
+  font-size: 4rem;
+  font-weight: 300;
+  -webkit-font-kerning: none;
+          font-kerning: none;
+}
+
+.eyecatch span {
+  font-weight: 400;
+  color: #4059ad;
+  background: linear-gradient(60deg, #4059ad, #f4b942);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*# sourceMappingURL=index.module.css.map */
