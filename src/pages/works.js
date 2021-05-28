@@ -116,6 +116,130 @@ const WorkPage = () => (
                         </p>
                     </details>
                 </section>
+                <section>
+                    <h3>GOKIGEN Appeal</h3>
+                    <p>2021.4</p>
+                    <ul className={styles.skill_list}>
+                        <li>
+                            Slack API
+                        </li>
+                        <li>
+                            Node.js
+                        </li>
+                        <li>
+                            Javascript
+                        </li>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS(SCSS)
+                        </li>
+                    </ul>
+                    <div className={styles.img_wrapper}>
+                        <ImageZoom
+                            image={{
+                                src: '/GOKIGEN_appeal/gokigen-appeal.herokuapp.com_ (1).png',
+                                alt: 'first image of GOKIGEN appeal',
+                            }}
+                            zoomImage={{
+                                className: `${subpageStyles.mediumzoom_image}`,
+                            }}
+                            shouldReplaceImage={false}
+                        />
+                        <ImageZoom
+                            image={{
+                                src: '/GOKIGEN_appeal/gokigen-appeal.herokuapp.com_(iPhone 5_SE).png',
+                                alt: 'second image of GOKIGEN appeal',
+                            }}
+                            zoomImage={{
+                                className: `${subpageStyles.mediumzoom_image}`,
+                            }}
+                            shouldReplaceImage={false}
+                        />
+                    </div>
+                    <details>
+                        <summary>
+                            ボタン1つで、今のごきげん(mood)をSlackのstatus emojiとstatus messageに設定できます。<br />
+                            レスポンシブ対応。(画像2枚目はiPhone 5サイズでの表示です)
+                        </summary>
+                        <p>
+                            技術的にやっていることとしては、Slack APIを利用して、status emojiとstatus messageを書き換えます。<br />
+                            いずれ、スラッシュコマンドにも対応したら便利だと思っています(実装予定)。<br />
+                        </p>
+                        <p>
+                            以下は開発コンセプト(ポエム)です。
+                        </p>
+                        <p>
+                            このアプリケーションの開発、およびアイデアは、デジタルでのコミュニケーションを拡張したい、より便利にしたいという思想に基づいています。
+                        </p>
+                        <p>
+                            Slackというサービスはワークスペースというシステム上、誰もが「何かの集団の一員」として利用することがほとんどだと思います。<br />
+                            ですが、多くの人は別のワークスペースであったり、家庭であったり、なにかしらの他のコミュニティにも同時に属しており<br />
+                            (あるいは個人というひとりだけの空間も持っています)、そしてそこで起こったことで気持ちに変化が生じることは当然です。
+                        </p>
+                        <p>
+                            顔を見てコミュニケーションを取れる環境では、表情や声色、行動などからある程度相手の状態を想像することも可能かもしれませんが、<br />
+                            コロナ禍でリモートワークの進んだ今、Slackなどのツールでコミュニケーションを取っているとなかなか難しいです。<br />
+                            status emojiひとつで気持ちを抽象的に表現することは、コミュニケーションをする上で一つの「気持ちの準備」になるのではないかと思いました。
+                        </p>
+                    </details>
+                </section>
+                <section>
+                    <h3><a href="https://mhousetree.github.io/Curtain/" target="_blank">Curtain</a></h3>
+                    <p>2021.5.28 構想から完成まで3h(画像3枚目参照)</p>
+                    <ul className={styles.skill_list}>
+                        <li>
+                            Javascript
+                        </li>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS(SCSS)
+                        </li>
+                    </ul>
+                    <div className={styles.img_wrapper}>
+                        <ImageZoom
+                            image={{
+                                src: '/curtain/mhousetree.github.io_Curtain_.png',
+                                alt: 'first image of curtain',
+                            }}
+                            zoomImage={{
+                                className: `${subpageStyles.mediumzoom_image}`,
+                            }}
+                            shouldReplaceImage={false}
+                        />
+                        <ImageZoom
+                            image={{
+                                src: '/curtain/curtain.png',
+                                alt: 'second image of curtain',
+                            }}
+                            zoomImage={{
+                                className: `${subpageStyles.mediumzoom_image}`,
+                            }}
+                            shouldReplaceImage={false}
+                        />
+                        <ImageZoom
+                            image={{
+                                src: '/curtain/curtain_time.png',
+                                alt: 'third image of curtain',
+                            }}
+                            zoomImage={{
+                                className: `${subpageStyles.mediumzoom_image}`,
+                            }}
+                            shouldReplaceImage={false}
+                        />
+                    </div>
+                    <details>
+                        <summary>
+                            ブラウザで複数ウィンドウを使用中、タスクバーのマウスオーバー時やWindowsのタスク ビュー機能のサムネイルによって、<br />
+                            そのウィンドウの作業内容が分かるようにするためのシンプルなWebアプリケーションです。
+                        </summary>
+                        就職活動・大学の講義・研究・個人開発を平行して行っていると、Chromeでウィンドウやタブを開きすぎて<br />
+                        どのウィンドウにどんな情報があるか分からなくなりました。
+                    </details>
+                </section>
             </article>
             <article id="dtapps">
                 <h2>Desktop Applications</h2>
@@ -147,7 +271,7 @@ const WorkPage = () => (
                             フォームを埋めるだけでメールマガジンとして配信するためのHTMLファイルを出力するアプリケーションです。
                         </summary>
                         <p>
-                            
+
                         </p>
                     </details>
                 </section>
@@ -310,7 +434,7 @@ const WorkPage = () => (
                 </section>
             </article>
         </section>
-    </Layout>
+    </Layout >
 )
 
 export default WorkPage
