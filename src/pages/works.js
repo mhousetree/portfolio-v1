@@ -118,6 +118,14 @@ const WorkPage = () => (
                 </section>
                 <section>
                     <h3>GOKIGEN Appeal</h3>
+                    <ul className={styles.links}>
+                        <li className={styles.app}>
+                            <a href="https://gokigen-appeal.herokuapp.com/" target="_blank">App</a>
+                        </li>
+                        <li className={styles.github}>
+                            <a href="https://github.com/mhousetree/gokigen-appeal" target="_blank">GitHub</a>
+                        </li>
+                    </ul>
                     <p>2021.4</p>
                     <ul className={styles.skill_list}>
                         <li>
@@ -168,9 +176,6 @@ const WorkPage = () => (
                             いずれ、スラッシュコマンドにも対応したら便利だと思っています(実装予定)。<br />
                         </p>
                         <p>
-                            以下は開発コンセプト(ポエム)です。
-                        </p>
-                        <p>
                             このアプリケーションの開発、およびアイデアは、デジタルでのコミュニケーションを拡張したい、より便利にしたいという思想に基づいています。
                         </p>
                         <p>
@@ -186,7 +191,15 @@ const WorkPage = () => (
                     </details>
                 </section>
                 <section>
-                    <h3><a href="https://mhousetree.github.io/Curtain/" target="_blank">Curtain</a></h3>
+                    <h3>Curtain</h3>
+                    <ul className={styles.links}>
+                        <li className={styles.app}>
+                            <a href="https://mhousetree.github.io/Curtain/" target="_blank">App</a>
+                        </li>
+                        <li className={styles.github}>
+                            <a href="https://github.com/mhousetree/Curtain" target="_blank">GitHub</a>
+                        </li>
+                    </ul>
                     <p>2021.5.28 構想から完成まで3h(画像3枚目参照)</p>
                     <ul className={styles.skill_list}>
                         <li>
@@ -236,8 +249,14 @@ const WorkPage = () => (
                             ブラウザで複数ウィンドウを使用中、タスクバーのマウスオーバー時やWindowsのタスク ビュー機能のサムネイルによって、<br />
                             そのウィンドウの作業内容が分かるようにするためのシンプルなWebアプリケーションです。
                         </summary>
-                        就職活動・大学の講義・研究・個人開発を平行して行っていると、Chromeでウィンドウやタブを開きすぎて<br />
-                        どのウィンドウにどんな情報があるか分からなくなりました。
+                        <p>
+                            就職活動・大学の講義・研究・個人開発を平行して行っていると、Chromeでウィンドウやタブを開きすぎて<br />
+                            どのウィンドウにどんな情報があるか分からなくなり、作業効率が低下していると感じました。<br />
+                            これを解決するために制作しました。
+                        </p>
+                        <p>
+
+                        </p>
                     </details>
                 </section>
             </article>
