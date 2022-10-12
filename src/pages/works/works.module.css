@@ -1,9 +1,6 @@
 .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .links li {
   text-indent: 100%;
   white-space: nowrap;
@@ -12,71 +9,50 @@
   height: 24px;
   background-size: cover;
 }
-
 .links li.app {
   background-image: url("/icons/browser.svg");
 }
-
 .links li.github {
   background-image: url("/icons/mark-github.svg");
 }
 
 .skill_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin: 0.5rem 0;
 }
-
 .skill_list li {
   border-left: 1px solid #0d0c1d;
   padding: 0 0.5em;
 }
-
 .skill_list li:first-child {
   border: none;
 }
 
 .img_wrapper {
   margin: 1rem 1rem 1rem 0.5rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(12vw, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(12vw, 1fr));
-  -ms-grid-rows: (9vw)[auto-fill];
-      grid-template-rows: repeat(auto-fill, 9vw);
+  grid-template-columns: repeat(auto-fill, minmax(12vw, 1fr));
+  grid-template-rows: repeat(auto-fill, 9vw);
   gap: 0.5rem;
 }
-
 .img_wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #fff;
-  -webkit-filter: drop-shadow(0, 0, 2px, #0d0c1d);
-          filter: drop-shadow(0, 0, 2px, #0d0c1d);
+  filter: drop-shadow(0, 0, 2px, #0d0c1d);
 }
-
 .img_wrapper img:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-filter: brightness(0.9);
-          filter: brightness(0.9);
-  -webkit-transition: 0.3s;
+  transform: scale(1.02);
+  filter: brightness(0.9);
   transition: 0.3s;
 }
 
 @media screen and (max-width: 1450px) {
   .img_wrapper {
-    -ms-grid-columns: (minmax(16vw, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(16vw, 1fr));
-    -ms-grid-rows: (12vw)[auto-fill];
-        grid-template-rows: repeat(auto-fill, 12vw);
+    grid-template-columns: repeat(auto-fill, minmax(16vw, 1fr));
+    grid-template-rows: repeat(auto-fill, 12vw);
   }
-}
-/*# sourceMappingURL=works.module.css.map */
+}/*# sourceMappingURL=works.module.css.map */

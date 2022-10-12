@@ -1,23 +1,12 @@
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  width: calc( var(--contentWidth) + 6rem);
+  box-sizing: content-box;
+  width: calc(var(--contentWidth) + 6rem);
   padding-top: 1rem;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   justify-self: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-column: 2;
+  align-items: center;
   grid-column: 2;
   z-index: 3;
   position: -webkit-sticky;
@@ -30,16 +19,13 @@
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 400;
-  -webkit-font-kerning: normal;
-          font-kerning: normal;
+  font-kerning: normal;
   margin-left: 3rem;
 }
-
 .title a {
   position: relative;
   padding-left: 76px;
 }
-
 .title a::before {
   display: inline-block;
   position: absolute;
@@ -48,9 +34,8 @@
   width: 64px;
   height: 64px;
   content: "";
-  background-image: url(../../../public/icons/panda-icon.svg);
+  background-image: url(../../images/icon.svg);
 }
-
 .title a:hover::before {
   -webkit-animation-name: shake;
           animation-name: shake;
@@ -61,82 +46,56 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes shake {
-  0%,
-  100% {
+  0%, 100% {
     tranform: rotate(0);
   }
   50% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg);
+    transform: rotate(8deg);
   }
 }
-
 @keyframes shake {
-  0%,
-  100% {
+  0%, 100% {
     tranform: rotate(0);
   }
   50% {
-    -webkit-transform: rotate(8deg);
-            transform: rotate(8deg);
+    transform: rotate(8deg);
   }
 }
 
 .globalnav {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   font-size: 1.5rem;
   font-weight: 600;
   margin-right: 3rem;
 }
-
 .globalnav li {
   position: relative;
   margin-right: 1.5rem;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 .globalnav li:last-child {
   margin-right: 0;
 }
-
 .globalnav li::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -4px;
   left: -3px;
   width: 110%;
   height: 1px;
-  background: -webkit-gradient(linear, left top, right top, from(#4059ad), to(#f4b942));
   background: linear-gradient(90deg, #4059ad, #f4b942);
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
 }
-
 .globalnav li:hover {
   color: #3e3989;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 .globalnav li:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transition: .3s;
-  transition: .3s;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-}
-/*# sourceMappingURL=header.module.css.map */
+  transform: scaleX(1);
+  transition: 0.3s;
+  transform-origin: right;
+}/*# sourceMappingURL=header.module.css.map */

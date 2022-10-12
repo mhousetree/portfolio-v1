@@ -1,101 +1,101 @@
 @import "../variable.scss";
 
 .wrapper {
-    display: flex;
-    box-sizing: content-box;
-    width: calc( var(--contentWidth) + 6rem );
-    padding-top: 1rem;
-    flex-direction: row;
-    justify-content: space-between;
-    justify-self: center;
-    align-items: center;
-    grid-column: 2;
-    z-index: 3;
-    position: sticky;
-    margin-top: -0.5rem;
-    top: 0;
-    // backdrop-filter: blur(10px);
+  display: flex;
+  box-sizing: content-box;
+  width: calc(var(--contentWidth) + 6rem);
+  padding-top: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: center;
+  align-items: center;
+  grid-column: 2;
+  z-index: 3;
+  position: sticky;
+  margin-top: -0.5rem;
+  top: 0;
+  // backdrop-filter: blur(10px);
 }
 
 .title {
-    display: inline-block;
-    font-size: 1.8rem;
-    font-weight: 400;
-    font-kerning: normal;
-    margin-left: 3rem;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-kerning: normal;
+  margin-left: 3rem;
 
-    a {
-        position: relative;
-        padding-left: 76px;
+  a {
+    position: relative;
+    padding-left: 76px;
 
-        &::before {
-            display: inline-block;
-            position: absolute;
-            top: -14px;
-            left: 0;
-            width: 64px;
-            height: 64px;
-            content: "";
-            background-image: url(../../../public/icons/panda-icon.svg);
-        }
-
-        &:hover::before {
-            animation-name: shake;
-            animation-duration: 1.5s;
-            animation-timing-function: ease;
-            animation-iteration-count: infinite;
-        }
-
-        @keyframes shake {
-            0%,
-            100% {
-                tranform: rotate(0);
-            }
-            50% {
-                transform: rotate(8deg);
-            }
-        }
+    &::before {
+      display: inline-block;
+      position: absolute;
+      top: -14px;
+      left: 0;
+      width: 64px;
+      height: 64px;
+      content: "";
+      background-image: url(../../images/icon.svg);
     }
+
+    &:hover::before {
+      animation-name: shake;
+      animation-duration: 1.5s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+      0%,
+      100% {
+        tranform: rotate(0);
+      }
+      50% {
+        transform: rotate(8deg);
+      }
+    }
+  }
 }
 
 .globalnav {
-    display: inline-flex;
-    flex-direction: row;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-right: 3rem;
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 3rem;
 
-    li {
-        position: relative;
-        margin-right: 1.5rem;
-        transition: .3s;
+  li {
+    position: relative;
+    margin-right: 1.5rem;
+    transition: 0.3s;
 
-        &:last-child {
-            margin-right: 0;
-        }
-
-        &::after {
-            position: absolute;
-            content: '';
-            bottom: -4px;
-            left: -3px;
-            width: 110%;
-            height: 1px;
-            background: linear-gradient(90deg, $main-color, $sub-color);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: .3s;
-        }
-
-        &:hover {
-            color: lighten($text-color, 30%);
-            transition: .3s;
-
-            &::after {
-                transform: scaleX(1);
-                transition: .3s;
-                transform-origin: right;
-            }
-        }
+    &:last-child {
+      margin-right: 0;
     }
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -4px;
+      left: -3px;
+      width: 110%;
+      height: 1px;
+      background: linear-gradient(90deg, $main-color, $sub-color);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: lighten($text-color, 30%);
+      transition: 0.3s;
+
+      &::after {
+        transform: scaleX(1);
+        transition: 0.3s;
+        transform-origin: right;
+      }
+    }
+  }
 }
